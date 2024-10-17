@@ -1,0 +1,49 @@
+body{
+    background-color: lightblue;
+    text-align: justify;
+}
+body a{
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav{
+    text-align: center;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+a:hover{
+    background-color: rgb(113, 151, 255);
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 27px;
+}
+p{
+    font-size: 23px;
+}
+div{
+    text-align: center;
+}
+div a{
+    color: blue;
+    font-size: 20px;
+    text-decoration: none;
+}
+div img{
+    text-align: center;
+    border: dashed, rgb(113, 151, 255) 10px;
+    border-radius: 10px;
+}
+small{
+    font-size: 20px;
+}
+pre{
+    font-size: 23px;
+}

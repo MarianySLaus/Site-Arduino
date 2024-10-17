@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prática e programação do semáforo duplo</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Principal |</a>
+        <a href="./tinkersimples.html">Simples |</a>
+        <a href="./semasimples.html">Semáforo |</a>
+        <a href="./tinkerduplo.html">Duplo |</a>
+        <a href="./semaduplo.html">Semáforo</a><br>
+        <a href="./contacrescente.html">Contador Crescente|</a>
+        <a href="./contadecrescente.html">Contador Decrescente|</a>
+        <a href="./contasemaduplo.html">Contador Semafóro Duplo</a>
+    </nav>
+    <br>
+    <small>Criado dia: 17/10/2024 </small>
+    <div>
+        <h1>ARDUÍNO na prática – Semáforo Duplo</h1>
+        <img src="./praticadupla.jpg" alt="Semáforo na Prática"></div>
+    <br>
+    <div class="video">
+        <h2>Vídeo montagem prática</h2>
+        <iframe width="987" height="557" src="https://www.youtube.com/embed/x2kGnetVxW0" title="Semáforo Duplo - Programando com IDE Arduíno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+    <div> 
+        <h2>Código C++ da IDE ARDUÍNO</h2>
+        <img src="idearduduplo.jpg" alt="Código C++">
+    </div>
+    <br>
+    <h2>Código C++</h2>
+    <pre>
+        // C++ code
+//
+void setup()
+{
+  pinMode(8, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(9, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(8, HIGH);
+  digitalWrite(13, HIGH);
+  delay(5000); // Wait for 5000 millisecond(s)
+  digitalWrite(13, LOW);
+  digitalWrite(12, HIGH);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(8, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
+  delay(3000); // Wait for 3000 millisecond(s)
+  digitalWrite(10, LOW);
+  digitalWrite(9, HIGH);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(11, LOW);
+  digitalWrite(9, LOW);
+}
+    </pre>
+</body>
+</html>
